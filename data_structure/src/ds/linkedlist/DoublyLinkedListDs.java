@@ -1,4 +1,4 @@
-package ds.LinkedListDs;
+package ds.linkedlist;
 
 public class DoublyLinkedListDs {
     private Node head;

@@ -1,9 +1,9 @@
-package ds.LinkedListDs;
+package ds.array;
 
 import ds.InputProcessing;
 
 public class Main {
     public static void main(String[] args) {
-        InputProcessing.processInput(new LinkedListDs());
+        InputProcessing.processInput(new ArrayDs());
     }
 }

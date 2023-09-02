@@ -1,4 +1,4 @@
-package ds.LinkedListDs;
+package ds.linkedlist;
 
 public class SingleLinkedListDs {
     public SingleLinkedListDs() {

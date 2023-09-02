@@ -1,4 +1,4 @@
-package ds.LinkedListDs;
+package ds.linkedlist;
 
 import ds.Executioner;
 

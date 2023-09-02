@@ -1,4 +1,4 @@
-package ds.ArrayDs;
+package ds.array;
 
 import ds.Executioner;
 
