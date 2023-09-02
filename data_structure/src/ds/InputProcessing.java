@@ -1,7 +1,10 @@
+package ds;
+
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
+public class InputProcessing {
+
+    public static void processInput(Executioner executioner) {
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
         System.out.println("==================================================");
@@ -12,7 +15,7 @@ public class Main {
             try {
                 int i = scanner.nextInt();
                 if (i == 99) exit = true;
-                Array.execute(i);
+                executioner.execute(i);
             } catch (Exception e) {
                 throw new RuntimeException("Number only!");
             }
