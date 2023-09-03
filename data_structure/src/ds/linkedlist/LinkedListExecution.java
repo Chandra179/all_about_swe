@@ -2,18 +2,18 @@ package ds.linkedlist;
 
 import ds.Executioner;
 
-public class LinkedListDs extends Executioner {
+public class LinkedListExecution extends Executioner {
 
-    public LinkedListDs(){}
+    public LinkedListExecution(){}
 
     @Override
     public void execute(int i) {
         if (i==0) {
-            SingleLinkedListDs sll = new SingleLinkedListDs();
+            SingleLinkedList sll = new SingleLinkedList();
         } else if (i==1) {
-            DoublyLinkedListDs.execute();
+            DoublyLinkedList.execute();
         } else if (i==2) {
-            CircularLinkedListDs.execute();
+            CircularLinkedList.execute();
         } else {
             System.out.println("Allowed input : " + "[0, 1]");
         }

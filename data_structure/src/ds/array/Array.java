@@ -6,20 +6,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ArrayDs extends Executioner {
+public class Array {
 
-    public ArrayDs() {}
-
-    @Override
-    public void execute(int i) {
-        if (i==0) {
-            oneDimensionalArray();
-        } else if (i==1) {
-            multiDimensionalArray();
-        } else {
-            System.out.println("Allowed input : " + "[0, 1]");
-        }
-    }
+    public Array() {}
 
     public static void oneDimensionalArray() {
         int[] numbers = new int[5];

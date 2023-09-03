@@ -1,16 +1,16 @@
 package ds.linkedlist;
 
-public class DoublyLinkedListDs {
+public class DoublyLinkedList {
     private Node head;
     private Node tail;
 
-    public DoublyLinkedListDs() {
+    public DoublyLinkedList() {
         this.head = null;
         this.tail = null;
     }
 
     public static void execute() {
-        DoublyLinkedListDs list = new DoublyLinkedListDs();
+        DoublyLinkedList list = new DoublyLinkedList();
 
         list.addToFront(3);
         list.addToFront(2);

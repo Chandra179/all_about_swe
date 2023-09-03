@@ -1,16 +1,16 @@
 package ds.linkedlist;
 
-public class CircularLinkedListDs {
+public class CircularLinkedList {
     private Node head;
     private Node tail;
 
-    public CircularLinkedListDs() {
+    public CircularLinkedList() {
         head = null;
         tail = null;
     }
 
     public static void execute() {
-        CircularLinkedListDs myList = new CircularLinkedListDs();
+        CircularLinkedList myList = new CircularLinkedList();
 
         myList.append(1);
         myList.append(2);

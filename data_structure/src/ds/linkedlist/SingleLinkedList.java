@@ -1,7 +1,7 @@
 package ds.linkedlist;
 
-public class SingleLinkedListDs {
-    public SingleLinkedListDs() {
+public class SingleLinkedList {
+    public SingleLinkedList() {
         SinglyLinkedList list = new SinglyLinkedList();
 
         // Adding elements to the list
@@ -27,7 +27,7 @@ public class SingleLinkedListDs {
 
     class Node {
         int data;
-        SingleLinkedListDs.Node next;
+        SingleLinkedList.Node next;
 
         public Node(int data) {
             this.data = data;
@@ -36,7 +36,7 @@ public class SingleLinkedListDs {
     }
 
     class SinglyLinkedList {
-        private SingleLinkedListDs.Node head;
+        private SingleLinkedList.Node head;
 
         public SinglyLinkedList() {
             this.head = null;
@@ -44,11 +44,11 @@ public class SingleLinkedListDs {
 
         // Add an element to the end of the list
         public void addToEnd(int data) {
-            SingleLinkedListDs.Node newNode = new SingleLinkedListDs.Node(data);
+            SingleLinkedList.Node newNode = new SingleLinkedList.Node(data);
             if (head == null) {
                 head = newNode;
             } else {
-                SingleLinkedListDs.Node current = head;
+                SingleLinkedList.Node current = head;
                 while (current.next != null) {
                     current = current.next;
                 }
@@ -58,7 +58,7 @@ public class SingleLinkedListDs {
 
         // Display the elements of the list
         public void display() {
-            SingleLinkedListDs.Node current = head;
+            SingleLinkedList.Node current = head;
             while (current != null) {
                 System.out.print(current.data + " -> ");
                 current = current.next;
@@ -67,8 +67,8 @@ public class SingleLinkedListDs {
         }
 
         // Find an element in the list
-        public SingleLinkedListDs.Node find(int target) {
-            SingleLinkedListDs.Node current = head;
+        public SingleLinkedList.Node find(int target) {
+            SingleLinkedList.Node current = head;
             while (current != null) {
                 if (current.data == target) {
                     return current;
