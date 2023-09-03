@@ -17,7 +17,7 @@ public class InputProcessing {
                 if (i == 99) exit = true;
                 executioner.execute(i);
             } catch (Exception e) {
-                throw new RuntimeException("Number only!");
+                throw new RuntimeException(e.getMessage());
             }
         }
         scanner.close();

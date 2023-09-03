@@ -1,7 +1,5 @@
 package ds.array;
 
-import ds.Executioner;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
