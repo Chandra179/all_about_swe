@@ -12,6 +12,8 @@ public class QueueExecution extends Executioner {
             ArrayQueue.execute();
         } else if (i==1) {
             CircularQueue.execute();
+        } else if (i==2) {
+            PriorityQueue.execute();
         } else {
             System.out.println("Allowed input : " + "[0, 1]");
         }
