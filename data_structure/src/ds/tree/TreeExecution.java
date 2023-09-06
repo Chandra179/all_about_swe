@@ -1,10 +1,6 @@
 package ds.tree;
 
 import ds.Executioner;
-import ds.stack.ArrayStack;
-import ds.stack.BoundedStack;
-import ds.stack.DynamicArrayStack;
-import ds.stack.LinkedListStack;
 
 public class TreeExecution extends Executioner {
 
@@ -14,6 +10,12 @@ public class TreeExecution extends Executioner {
             BinarySearchTree.execute();
         } else if (i==1) {
             AvlTree.execute();
+        } else if (i==2) {
+            new CyclicGraph();
+        } else if (i==3) {
+            Trie.execute();
+        } else if (i==4) {
+            SuffixTree.execute();
         } else {
             System.out.println("Allowed input : " + "[0, 1]");
         }
