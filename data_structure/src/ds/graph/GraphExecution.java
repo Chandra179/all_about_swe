@@ -17,6 +17,8 @@ public class GraphExecution extends Executioner {
             DirectedGraph.execute();
         } else if (i==2) {
             WeightedGraph.execute();
+        } else if (i==3) {
+            new CyclicGraph();
         } else {
             System.out.println("Allowed input : " + "[0, 1]");
         }

@@ -1,6 +1,7 @@
 package ds.tree;
 
 import ds.Executioner;
+import ds.graph.CyclicGraph;
 
 public class TreeExecution extends Executioner {
 
@@ -11,10 +12,8 @@ public class TreeExecution extends Executioner {
         } else if (i==1) {
             AvlTree.execute();
         } else if (i==2) {
-            new CyclicGraph();
-        } else if (i==3) {
             Trie.execute();
-        } else if (i==4) {
+        } else if (i==3) {
             SuffixTree.execute();
         } else {
             System.out.println("Allowed input : " + "[0, 1]");
