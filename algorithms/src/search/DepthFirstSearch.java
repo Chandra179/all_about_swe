@@ -37,6 +37,7 @@ public class DepthFirstSearch {
 
         // Recur for all adjacent vertices
         for (Integer neighbor : adjList[v]) {
+            System.out.println(", current vertice:" + v + "-> " + adjList[v] + ", neighbor: " + neighbor);
             if (!visited[neighbor]) {
                 DFSUtil(neighbor, visited);
             }
