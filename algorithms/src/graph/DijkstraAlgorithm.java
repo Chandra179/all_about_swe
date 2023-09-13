@@ -20,19 +20,16 @@ public class DijkstraAlgorithm {
 
             // Update all the neighbouring vertex distances
             for (int v = 0; v < count; v++) {
-                System.out.print("visitedVerted :" + visitedVertex[v] +
-                                 ", graph["+u+"]"+"["+v+"] :" + graph[u][v] +
-                                 ", distance["+u+"] :" + distance[u] +
-                                 ", distance["+v+"] :" + distance[v]);
+                System.out.print("current vertex: " + u +
+                                 ", visited vertex :" + visitedVertex[v] +
+                                 ", weight["+u+"]"+"["+v+"] :" + graph[u][v] +
+                                 ", shortest path["+v+"] :" + distance[v]);
                 System.out.println();
                 if (!visitedVertex[v] && graph[u][v] != 0 && (distance[u] + graph[u][v] < distance[v])) {
                     distance[v] = distance[u] + graph[u][v];
                 }
             }
-            System.out.println("==========================================");
-        }
-        for (int i = 0; i < distance.length; i++) {
-            System.out.println(String.format("Distance from %s to %s is %s", source, i, distance[i]));
+            System.out.println("============================================");
         }
 
     }
@@ -42,8 +39,6 @@ public class DijkstraAlgorithm {
         int minDistance = Integer.MAX_VALUE;
         int minDistanceVertex = -1;
         for (int i = 0; i < distance.length; i++) {
-            System.out.print("i: " + i + ", visited vertex: " + visitedVertex[i] + ", distance: " + distance[i]);
-            System.out.println();
             if (!visitedVertex[i] && distance[i] < minDistance) {
                 minDistance = distance[i];
                 minDistanceVertex = i;
