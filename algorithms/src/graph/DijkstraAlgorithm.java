@@ -16,17 +16,20 @@ public class DijkstraAlgorithm {
 
             // Update the distance between neighbouring vertex and source vertex
             int u = findMinDistance(distance, visitedVertex);
+            System.out.println("Current min distance that will be proceed to check path to other node: " + u);
             visitedVertex[u] = true;
 
             // Update all the neighbouring vertex distances
             for (int v = 0; v < count; v++) {
                 System.out.print("current vertex: " + u +
-                                 ", visited vertex :" + visitedVertex[v] +
-                                 ", weight["+u+"]"+"["+v+"] :" + graph[u][v] +
-                                 ", shortest path["+v+"] :" + distance[v]);
+                                 ", visited vertex_v["+v+"]: " + visitedVertex[v] +
+                                 ", weight_u_v["+u+"]"+"["+v+"] :" + graph[u][v] +
+                                 ", distance_u["+u+"]: " + distance[u] +
+                                 ", shortest_path_v["+v+"] :" + distance[v]);
                 System.out.println();
                 if (!visitedVertex[v] && graph[u][v] != 0 && (distance[u] + graph[u][v] < distance[v])) {
                     distance[v] = distance[u] + graph[u][v];
+                    System.out.println("distance_v in if condition["+v+"] : " + distance[v]);
                 }
             }
             System.out.println("============================================");
@@ -39,6 +42,10 @@ public class DijkstraAlgorithm {
         int minDistance = Integer.MAX_VALUE;
         int minDistanceVertex = -1;
         for (int i = 0; i < distance.length; i++) {
+//            System.out.print("GET MIN DISTANCE" +
+//                    ", visited: " + visitedVertex[i] +
+//                    ", distance["+i+"]: " + distance[i] +
+//                    ", min_distance: " + minDistance);
             if (!visitedVertex[i] && distance[i] < minDistance) {
                 minDistance = distance[i];
                 minDistanceVertex = i;
